@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  
+
+  <style>     
+    h1 {
+      font-size: 60px;
+      text-align: center;
+    }    
+    h2 {
+      font-size: 30px;
+      text-align: center;
+      color: gray;
+    } 
+    .headingtext {
+      color: blue;
+    }   
+    .bodytext {
+      font-family: Helvetica;
+      color: black;
+    }
+
+    #banner {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+    #container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+  </style>
+
+  <body>
+    <div id="container">
+      <h1><b>Trending Start-ups</b></h1>
+      <img id="banner" src="https://590f0c94-4f7a-48b8-b911-5ee87a374bae-00-2ixvxaa18in0x.pike.replit.dev/static/site%20image.jpg.webp" height="800" width="1950">
+      
+      <h2>ABOUT START-UPS</h2>
+      <p class="bodytext"> 
+        Startups are young, innovative companies that aim to develop unique products or services, often leveraging cutting-edge technology to disrupt established industries. Typically launched by small teams with a bold vision, startups operate in fast-paced environments, striving to achieve rapid growth and scalability. They often begin with limited resources and rely heavily on external funding from venture capitalists, angel investors, or crowdfunding to fuel their expansion. Flexibility, creativity, and a willingness to take risks are key to a startup's success, as they navigate challenges such as market competition, evolving customer needs, and the pressure to deliver results quickly.
+      </p>
+
+      <h3 class= "headingtext">
+        List of growing startups - </h3>
+      
+      <div style="font-family:Garamond;"> 
+        {% for startup in startups %}
+        {% include 'startuplist.html'%}
+        {% endfor %}
+      </div>
+      
+      <div style="text-align: center;">
+        <a href="http://www.example.com">
+          <button type="button" class="btn btn-outline-secondary">Reach Us</button>
+        </a>
+        <p>copyright 2024, inc</p>
+      </div>
+    </div>
+  </body>
+</html>

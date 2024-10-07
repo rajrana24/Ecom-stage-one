@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      button {
+        color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="border-bottom row" style="margin-bottom:16px; padding:8px;"> 
+      <!-- First column with name and location -->
+      <div class="col-9">
+        <h3 style="color:gray;">
+          {{ startup['name'] }}
+        </h3>
+        <div> 
+          <b>Location:</b> 
+          {{ startup['location'] }}
+        </div>
+      </div>
+      
+      <!-- Second column with the button link -->
+      <div class="col-3" style="display: flex; justify-content: flex-end; align-items: center;">
+         <a href="https://res.cloudinary.com/teepublic/image/private/s--McxLnEy6--/c_crop,x_10,y_10/c_fit,h_789/c_crop,g_north_west,h_1038,w_1038,x_-212,y_-123/l_upload:v1565806151:production:blanks:vdbwo35fw6qtflw9kezw/fl_layer_apply,g_north_west,x_-323,y_-234/b_rgb:0195c3/c_limit,f_auto,h_630,q_auto:good:420,w_630/v1618835763/production/designs/21214939_0.jpg"> Link </a>
+        
+      </div>
+    </div>
+  </body>
+</html>
